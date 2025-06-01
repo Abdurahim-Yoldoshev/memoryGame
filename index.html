@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game | Yo'ldoshev Coder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <div class="screen">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" id="logo">
+        </div>
+        <div id="containerRow">
+            <div class="container">
+                <img src="img/logo.png" alt="" class="logoImage">
+                <h1>Memory Game</h1>
+                <p>🧠 Welcome to the Memory Game! Test your memory by matching pairs of cards.</p>
+                <button id="start-game">Start Game</button>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <h1>Memory Game</h1>
+            <div class="game-info">
+                <p id="moves">Time: <span id="time"></span></p>
+            </div>
+            <div class="container">
+                <div id="gameBoard">
+                </div>
+            </div>
+            
+            <div id="game-over-row">
+                <div class="game-over">
+                    <img src="img/logo.png" alt="">
+                    <h2>You Winner!</h2>
+                    <p id="finalScore">Your time: <span id="final-time">0</span></p>
+                    <button id="restart">Start Game</button>
+                </div>
+            </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
