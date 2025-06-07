@@ -6,7 +6,7 @@ const restart = document.getElementById('restart');
 const Time = document.getElementById('time');
 let timer = null; // global timer id
 
-const allEmojis = ['🎯', '🚀', '🍕', '🎮', '🎲', '🚗', '🐱', '🎵', '🌟', '🍀', '🌈', '🎁', '🔥', '🐶', '📦', '💎'];
+const allEmojis = ['🎯', '🚀', '🍕', '🎮', '🎲', '⚽', '🐱', '🎵', '🌟', '🍀', '🌈', '🎁', '🔥', '🐶', '📦', '💎'];
 function getRandomEmojis(count = 8) {
   const shuffled = allEmojis.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
@@ -66,7 +66,7 @@ function startMemoryGame() {
               first.classList.remove('flipped');
               second.classList.remove('flipped');
               flippedCards = [];
-            }, 1000);
+            }, 700);
           }
         }
       });

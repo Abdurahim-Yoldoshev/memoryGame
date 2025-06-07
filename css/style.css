@@ -103,32 +103,6 @@ h1, p {
     width: 50%;
     margin-left: 25%;
 }
-
-.difficulty-selector {
-  margin: 20px auto;
-  text-align: center;
-}
-
-.difficulty-selector label {
-  font-size: 18px;
-  color: white;
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-.difficulty-selector select {
-  padding: 8px 12px;
-  font-size: 16px;
-  border-radius: 6px;
-  border: none;
-  background-color: #45a049;
-  color: white;
-  cursor: pointer;
-}
-
-.difficulty-selector select:focus {
-  outline: none;
-}
 .game-info{
     display: flex;
     flex-direction: column;
@@ -136,7 +110,6 @@ h1, p {
     justify-content: center;
     width: 6%;
     height: 30px;
-    background-color: #4CAF50;
     margin-left: 47%;
     border-radius: 10px;
     margin-top: 5px;
@@ -154,8 +127,6 @@ h1, p {
     cursor: pointer;
     font-size: 16px;   
 }
-
-
 
 #gameBoard {
   display: grid;
@@ -194,15 +165,23 @@ h1, p {
   #gameBoard {
     max-width: 350px;
     gap: 10px;
-    margin-left: -50px;
-    margin-top: -100px;
+    margin-left: -60px;
   }
-  
+    .mainContainer .container{
+    margin-top: 1rem;
+  }
   .mainContainer h1{
     margin-top: 100px;
   }
-  .game-info{
-    margin-top: -100px;
+}
+
+@media (max-width: 950px){
+  .mainContainer .container{
+    margin-top: 5rem;
+  }
+
+  footer{
+    height: 30vh;
   }
 }
 
@@ -251,23 +230,6 @@ h1, p {
   transform: rotateY(180deg);
 }
 
-.lvl{
-  background-color: #4CAF50;
-  padding: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  font-size: 20px;
-}
-#lvl {
-  font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #3e8e41;
-  padding: 3px;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-  font-size: 20px;
-}
-
 #game-over-row{
   position: fixed;
   z-index: 100000;
@@ -295,4 +257,56 @@ h1, p {
   height: 150px;
 }
 
+footer{
+  width: 100%;
+  height: 8.2vh;
+  background-color: #2e333d;
+  margin-top: 23vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.footer-container{
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+#footer-logo label {
+  color: #f0f0f0;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 1rem;
+  margin-top: 5px;
+}
+
+.prog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.prog p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.prog a{
+  color: #f0f0f0;
+  text-decoration: none;
+  margin-top: 7.4px;
+  margin-left: 5px;
+}
+
+.prog a:hover{
+  text-decoration: underline;
+  color: #4CAF50;
+}
